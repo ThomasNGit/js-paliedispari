@@ -23,30 +23,24 @@ function risultato() {
 
     somma = pcnum + usernum;
     
-    pari = false
+    console.log(somma);
+    
+     pari = false
 
-    if (somma % 2 === 0){
+     if (somma % 2 === 0){
 
         pari = true
 
-        console.log("il numero è " + somma + ", quindi è pari");
+         console.log("il numero è " + somma + ", quindi è pari");
 
-    } else {
+     } else {
 
-        console.log("il numero è " + somma + ", quindi è dispari");
+     console.log("il numero è " + somma + ", quindi è dispari");
         
-    }
+}
     
 }
 
-
-if (parodisp = pari){
-    console.log("hai vinto");
-    
-}   else {
-    console.log("hai perso");
-    
-}
 
 
 
