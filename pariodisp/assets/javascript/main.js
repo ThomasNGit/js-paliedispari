@@ -15,32 +15,63 @@ var pcnum = Math.floor(Math.random() * 5 + 1);
 
 console.log(pcnum);
 
+var result =  document.getElementById("risultato");
 
 //funzione che calcola il risultato
 risultato();
 
 function risultato() {
 
-    somma = pcnum + usernum;
+    somma = usernum + pcnum;
     
     console.log(somma);
-    
-     pari = false
+
+    pari = false
 
      if (somma % 2 === 0){
 
-        pari = true
+        pari = true;
 
          console.log("il numero è " + somma + ", quindi è pari");
 
      } else {
 
-     console.log("il numero è " + somma + ", quindi è dispari");
+        pari = false;
+
+        console.log("il numero è " + somma + ", quindi è dispari");
         
-}
+    } 
     
 }
 
+//dichiaro in pagina se l'utente ha vinto
+ if (pari == true && parodisp === "pari" ){
+
+    result.innerHTML = "La somma dei numeri è: " + somma + " quindi è pari. Hai vinto!" 
+
+    console.log("hai vinto!");
+    
+ }  else if (pari == false && parodisp === "pari"){
+
+    result.innerHTML = "La somma dei numeri è: " + somma + " quindi è dispari. Hai perso!" 
+
+    console.log("hai perso!");
+
+ } else if (pari == false && parodisp === "dispari"){
+
+    result.innerHTML = "La somma dei numeri è: " + somma + " quindi è dispari. Hai vinto!" 
+
+    console.log("hai vinto!");
+ 
+ } else if (pari == true && parodisp === "dispari"){
+
+    result.innerHTML = "La somma dei numeri è: " + somma + " quindi è pari. Hai perso!" 
+
+    console.log("hai perso!");
+
+ }
+    
+    
 
 
 
