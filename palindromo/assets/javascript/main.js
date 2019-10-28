@@ -1,5 +1,7 @@
 //chiedi all'utente di inserire una parola e verifica se è palindroma
 
+
+
 //creo un array vuoto in cui inserire la parola da controllare
 var word = [];
 
@@ -12,16 +14,18 @@ word.push(userword);
 console.log(word);
 
 function palindromo(){
-    if (word.reverse == word){
+    
 
-        palindromo = "palindroma"
-        
-    }else {
+    if(word.reverse === userword){
 
-        palindromo = "non palindroma"
+        return true
+
+
+    } else {
+
+        return false
         
     }
-    return palindromo;
 }
 
-console.log("la parola è: " + palindromo);
+console.log("la parola è: " + pal);
